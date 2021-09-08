@@ -1,0 +1,81 @@
+
+:root{
+    --width-1000:1000px;
+}
+.container{
+    position: relative;
+    margin: auto;
+    width: var(--width-1000);
+    height: 800px;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+.left-border{
+    position: absolute;
+    left: -200px;
+    width: 200px;
+    height: 800px;
+    border: 1px solid black;
+}
+.btn{
+    margin: auto;
+    position: absolute;
+    top: 500px;
+    left: 0;
+    right: 0;
+    width: 150px;
+    padding: 10px;
+    font-size: 30px;
+    background: chocolate;
+    border-radius: 7px;
+}
+.sky{
+    position: relative;
+    top:0;
+    width:var(--width-1000);
+    height: 550px;
+    background: url(img/sky-background.png);
+    background-size:auto;
+    background-repeat: repeat-x;
+}
+.ground{
+    position: relative;
+    bottom: 0;
+    width: var(--width-1000);
+    height: 250px;
+    background:url(img/bottom-background.png);
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position:top;
+    z-index: 1;
+}
+.bird{
+    position: absolute;
+    left: 300px;
+    width: 50px;
+    height: 50px;
+    background: url(img/bird.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+.bottomTube{
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    background: url(img/topPipe.png);
+    background-size:cover;
+    background-position:top;
+    background-repeat: no-repeat;
+}
+.topTube{
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+    width: 100px;
+    background: url(img/topPipe.png);
+    background-size:cover;
+    background-position:top;
+    background-repeat: no-repeat;
+}
