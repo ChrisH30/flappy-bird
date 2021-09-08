@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     function control(e) {
-        if (e.keyCode === 71 && !isGameOver) jump()
+        if (e.keyCode === 38 && !isGameOver) jump()
     };
     function jump() {
         if (top > 30) {
